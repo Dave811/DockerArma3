@@ -54,4 +54,4 @@ RUN chmod -R 777 \
 USER container 
 
 COPY ./entrypoint.sh /entrypoint.sh
-#CMD ["/bin/bash", "/entrypoint.sh"]
+CMD ["/bin/bash", "/entrypoint.sh"]
