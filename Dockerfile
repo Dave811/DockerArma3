@@ -43,7 +43,7 @@ RUN wget -O linuxgsm.sh https://linuxgsm.sh \
 USER root
 
 RUN mkdir -p lgsm/config-lgsm/arma3server
-RUN echo "steamuser='_dave_1987' \n steampass='IIhhII11gg'" > \
+RUN echo "steamuser='' \n steampass=''" > \
 	lgsm/config-lgsm/arma3server/common.cfg 
 
 RUN chown container:container \
@@ -52,8 +52,6 @@ RUN chmod -R 777 \
 	/home/container 
 
 USER container 
-
-RUN ./arma3server auto-install
 
 COPY ./entrypoint.sh /entrypoint.sh
 #CMD ["/bin/bash", "/entrypoint.sh"]
