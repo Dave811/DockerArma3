@@ -36,9 +36,9 @@ ENV HOME /home/container
 ENV TERM=xterm
 WORKDIR /home/container
 
-#RUN wget -O linuxgsm.sh https://linuxgsm.sh \
-#	&& chmod +x linuxgsm.sh \
-#	&& bash linuxgsm.sh arma3server
+RUN wget -O linuxgsm.sh https://linuxgsm.sh \
+	&& chmod +x linuxgsm.sh \
+	&& bash linuxgsm.sh arma3server
 
 #USER root
 
