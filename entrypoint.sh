@@ -1,6 +1,4 @@
 #!/bin/bash
-sleep 5
-
 cd /home/container
 
 # Replace Startup Variables
@@ -18,4 +16,4 @@ else
 fi
 
 # Run the Server
-${MODIFIED_STARTUP}
+#${MODIFIED_STARTUP}
