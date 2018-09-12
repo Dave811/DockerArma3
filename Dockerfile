@@ -8,7 +8,7 @@ RUN apt update -y \
 	&& curl -s http://download.mono-project.com/repo/xamarin.gpg | sudo apt-key add - \
 	&& echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/xamarin.list \
 	&& apt-get update \
-	&& apt-get -y install mono-complete
+	&& apt-get -y install mono-complete libopus-dev ffmpeg
 
 RUN useradd -m -d /home/container container
 
